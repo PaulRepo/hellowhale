@@ -10,7 +10,7 @@ pipeline {
       }
     }
     
-      stage("Build image") {
+      /*stage("Build image") {
             steps {
                 script {
                     myapp = docker.build("paul0docker/hellowhale:${env.BUILD_ID}")
@@ -28,6 +28,7 @@ pipeline {
                 }
             }
         }
+        */
 
     
     stage('Deploy App') {
